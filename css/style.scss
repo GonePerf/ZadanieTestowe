@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    background-color: #043e59;
+    color: white;
+    position: relative;
+    .nav-container{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        ul{
+            flex: 5;
+            display: inline;
+            list-style: none;
+            width: 45%;
+            height: 75px;
+            font-size: 120%;
+            margin-top: 10px;
+            li{
+                float: left;
+                margin: 24px;
+            }
+            li:hover{
+                cursor: pointer;
+            }
+        }
+        .logo{
+            
+            img{
+                box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+            }
+            img:hover{
+                cursor: pointer;
+            }
+        }
+        .search{
+            position: absolute;
+            top: 25px;
+            right: 20px;
+        }
+        .search:hover{
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    .left{
+        height: 930px;
+        position: relative;
+        
+        // position: absolute;
+        // left: 0;
+        float: left;
+        transition:  0.3s;
+        left: -145px;
+        width: 175px;
+        color: #043e59;
+        font-size: 120%;
+        padding: 100px 0 0 20px;
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                margin-top: 6px;
+            }
+        }
+        .action{
+            position: absolute;
+            top: 40%;
+            right: 10px;
+        }
+    }
+    .center{
+        width: 50%;
+        margin: auto;
+        .title{
+            padding-top: 50px;
+            text-align: center;
+            font-size: 35px;
+            color: #043e59;
+            span{
+                padding: 30px;
+            }
+        }
+        .content{
+            -webkit-column-count: 2; /* Chrome, Safari, Opera */
+            -moz-column-count: 2; /* Firefox */
+            column-count: 2;
+            -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+            -moz-column-width: 200px; /* Firefox */
+            column-width: 50%;
+            height: 90%;
+            text-align: justify;
+            color: #043e59;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    background-color: #043e59;
+}
+.show{
+    left: 0 !important;
+    box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+}
+.hide{
+    left: -145px !important;
+}

@@ -1,1 +1,146 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  background-color: #043e59;
+  color: white;
+  position: relative;
+}
+
+header .nav-container {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-container ul {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: inline;
+  list-style: none;
+  width: 45%;
+  height: 75px;
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+header .nav-container ul li {
+  float: left;
+  margin: 24px;
+}
+
+header .nav-container ul li:hover {
+  cursor: pointer;
+}
+
+header .nav-container .logo img {
+  -webkit-box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+          box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+}
+
+header .nav-container .logo img:hover {
+  cursor: pointer;
+}
+
+header .nav-container .search {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+header .nav-container .search:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.container .left {
+  height: 930px;
+  position: relative;
+  float: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  left: -145px;
+  width: 175px;
+  color: #043e59;
+  font-size: 120%;
+  padding: 100px 0 0 20px;
+}
+
+.container .left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container .left ul li {
+  margin-top: 6px;
+}
+
+.container .left .action {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+}
+
+.container .center {
+  width: 50%;
+  margin: auto;
+}
+
+.container .center .title {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: #043e59;
+}
+
+.container .center .title span {
+  padding: 30px;
+}
+
+.container .center .content {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-width: 200px;
+  /* Chrome, Safari, Opera */
+  /* Firefox */
+  column-width: 50%;
+  height: 90%;
+  text-align: justify;
+  color: #043e59;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+  background-color: #043e59;
+}
+
+.show {
+  left: 0 !important;
+  -webkit-box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+          box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+}
+
+.hide {
+  left: -145px !important;
+}
+/*# sourceMappingURL=style.css.map */
