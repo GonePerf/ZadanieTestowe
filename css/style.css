@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-family: 'Avenir';
 }
 
 header {
@@ -53,10 +54,28 @@ header .nav-container .logo img:hover {
   cursor: pointer;
 }
 
-header .nav-container .search {
+header .nav-container .search-box {
   position: absolute;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 25px;
   right: 20px;
+}
+
+header .nav-container .search-box input {
+  background-color: #043e59;
+  color: white;
+  height: 30px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  float: left;
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 40px;
+  border-bottom: 1px solid white;
 }
 
 header .nav-container .search:hover {
@@ -64,17 +83,19 @@ header .nav-container .search:hover {
 }
 
 .container {
-  width: 100%;
+  height: 90vh;
   position: relative;
 }
 
 .container .left {
-  height: 930px;
+  height: 1225px;
   position: relative;
+  left: 0;
   float: left;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  left: -145px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+          box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
   width: 175px;
   color: #043e59;
   font-size: 120%;
@@ -88,12 +109,18 @@ header .nav-container .search:hover {
 
 .container .left ul li {
   margin-top: 6px;
+  cursor: pointer;
+}
+
+.container .left img {
+  cursor: pointer;
 }
 
 .container .left .action {
   position: absolute;
-  top: 40%;
+  top: 31%;
   right: 10px;
+  cursor: pointer;
 }
 
 .container .center {
@@ -108,22 +135,35 @@ header .nav-container .search:hover {
   color: #043e59;
 }
 
+.container .center .title div {
+  width: 30%;
+  margin: auto;
+}
+
 .container .center .title span {
-  padding: 30px;
+  padding-top: 30px;
+  float: right;
+}
+
+.container .center .title hr {
+  margin-bottom: 50px;
 }
 
 .container .center .content {
   -webkit-column-count: 2;
-  /* Chrome, Safari, Opera */
-  /* Firefox */
-  column-count: 2;
-  -webkit-column-width: 200px;
-  /* Chrome, Safari, Opera */
-  /* Firefox */
-  column-width: 50%;
-  height: 90%;
+          column-count: 2;
+  -webkit-column-width: 50%;
+          column-width: 50%;
+  height: 1000px;
+  font-size: 115%;
   text-align: justify;
   color: #043e59;
+}
+
+hr {
+  border-style: dotted;
+  border-color: #043e59;
+  margin: 0;
 }
 
 footer {
@@ -134,13 +174,23 @@ footer {
   background-color: #043e59;
 }
 
-.show {
+.showMenu {
   left: 0 !important;
   -webkit-box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
           box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
 }
 
-.hide {
+.hideMenu {
   left: -145px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.hideSearch {
+  display: none !important;
+}
+
+.showSearch {
+  display: inline;
 }
 /*# sourceMappingURL=style.css.map */

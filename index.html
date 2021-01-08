@@ -21,8 +21,9 @@
                 <li>Referencje</li>
                 <li>Kontakt</li>
             </ul>
-            <div class="search">
-                <img src="img/search.png" width="30">
+            <div class="search-box">
+                <input type="text" placeholder="Szukaj" id="searchInput" class="hideSearch">
+                <img src="img/search.png" width="30" id="searchImg" onclick="actionSearch()">
             </div>
         </div>
     </header>
@@ -30,7 +31,7 @@
     <div class="container">
         <div class="left" id="left">
             Menu
-            <hr style="border-style: dotted; border-color: #043e59; width: 80%; margin: 0;" />
+            <hr style="width: 80%;" />
             <ul>
                 <li>Aktualności</li>
                 <li>Branże</li>
@@ -39,7 +40,7 @@
                 <li>Referencje</li>
                 <li>Kontakt</li>
             </ul>
-            <hr style="border-style: dotted; border-color: #043e59; width: 80%; margin: 0;" />
+            <hr style="width: 80%;" />
             <ul>
                 <li>O firmie</li>
                 <li>Nagrody</li>
@@ -47,22 +48,25 @@
                 <li>Partnerzy</li>
                 <li>Kariera</li>
             </ul>
-            <hr style="border-style: dotted; border-color: #043e59; width: 80%; margin: 0;" /> <br>
+            <hr style="width: 80%;" /> <br>
             <img src="img/fb.png" width="30"><br><br>
             <img src="img/in.png" width="30">
             <div class="action">
-                <span id="menuButton" onclick="actionMenu()">►</span>
+                <span id="menuButton" onclick="actionMenu()">◄</span>
             </div>
         </div>
         <div class="center">
             <div class="title">
-                <img src="img/home.png" width="80">
-                <span> O FIRMIE</span>
-                <hr style="border-style: dotted; border-color: #043e59;" />
+                <div>
+                    <img src="img/home.png" width="80">
+                    <span> O FIRMIE</span>
+                </div>
+                
+                <hr/>
             </div>
             <div class="content">
                 SIMPLE - z nami biznes jest prostszy! <br><br>
-                <img src="img/zdj.jpg" width="430">
+                <img src="img/zdj.jpg" width="470"><br>
                 <br> PONAD 24 LATA DOŚWIADCZENIA <br>
                 SIMPLE S.A. jest wiodącym w kraju producentem rozwiązań informatycznych do wspomagania zarządzania przedsiębiorstwami. Będąc producentem oprogramowania, dajemy pełną gwarancję dotyczącą jego działania oraz dostosowania do zmieniających się warunków biznesowych i przepisów prawa oraz szybkiej reakcji na zmieniające się potrzeby klientów. <br>
                  

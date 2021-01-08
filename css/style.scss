@@ -3,12 +3,15 @@
 }
 body{
     margin: 0;
+    font-family : 'Avenir';
 }
+
+$foregroundColor: #043e59;
 
 header{
     width: 100%;
     height: 75px;
-    background-color: #043e59;
+    background-color: $foregroundColor;
     color: white;
     position: relative;
     .nav-container{
@@ -40,10 +43,25 @@ header{
                 cursor: pointer;
             }
         }
-        .search{
+        .search-box{
             position: absolute;
+            height: 30px;
+            align-items: center;
             top: 25px;
             right: 20px;
+            input{
+                background-color: $foregroundColor;
+                color: white;
+                height: 30px;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                float: left;
+                padding: 5px;
+                font-size: 16px;
+                margin-right: 40px;
+                border-bottom: 1px solid white;
+            }
         }
         .search:hover{
             cursor: pointer;
@@ -53,19 +71,17 @@ header{
 }
 
 .container{
-    width: 100%;
+    height: 90vh;
     position: relative;
     .left{
-        height: 930px;
+        height: 1225px;
         position: relative;
-        
-        // position: absolute;
-        // left: 0;
+        left: 0;
         float: left;
-        transition:  0.3s;
-        left: -145px;
+        transition:  0.4s;
+        box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
         width: 175px;
-        color: #043e59;
+        color: $foregroundColor;
         font-size: 120%;
         padding: 100px 0 0 20px;
         ul{
@@ -73,13 +89,19 @@ header{
             padding: 0;
             li{
                 margin-top: 6px;
+                cursor: pointer;
             }
+        }
+        img{
+            cursor: pointer;
         }
         .action{
             position: absolute;
-            top: 40%;
+            top: 31%;
             right: 10px;
+            cursor: pointer;
         }
+        
     }
     .center{
         width: 50%;
@@ -88,23 +110,34 @@ header{
             padding-top: 50px;
             text-align: center;
             font-size: 35px;
-            color: #043e59;
+            color: $foregroundColor;
+            div{
+                width: 30%;
+                margin: auto;
+            }
             span{
-                padding: 30px;
+                padding-top: 30px;
+                float: right;
+            }
+            hr{
+                margin-bottom: 50px;
             }
         }
         .content{
-            -webkit-column-count: 2; /* Chrome, Safari, Opera */
-            -moz-column-count: 2; /* Firefox */
             column-count: 2;
-            -webkit-column-width: 200px; /* Chrome, Safari, Opera */
-            -moz-column-width: 200px; /* Firefox */
             column-width: 50%;
-            height: 90%;
+            height: 1000px;
+            font-size: 115%;
             text-align: justify;
-            color: #043e59;
+            color: $foregroundColor;
         }
     }
+}
+
+hr{
+    border-style: dotted;
+    border-color: #043e59;
+    margin: 0;
 }
 
 footer{
@@ -112,12 +145,19 @@ footer{
     position: fixed;
     bottom: 0;
     height: 75px;
-    background-color: #043e59;
+    background-color: $foregroundColor;
 }
-.show{
+.showMenu{
     left: 0 !important;
     box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
 }
-.hide{
+.hideMenu{
     left: -145px !important;
+    box-shadow: none !important;
+}
+.hideSearch{
+    display: none !important;
+}
+.showSearch{
+    display: inline;
 }
