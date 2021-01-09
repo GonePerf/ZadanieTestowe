@@ -74,7 +74,7 @@ header{
     height: 90vh;
     position: relative;
     .left{
-        height: 1225px;
+        height: 1245px;
         position: relative;
         left: 0;
         float: left;
@@ -126,6 +126,7 @@ header{
         .content{
             column-count: 2;
             column-width: 50%;
+            
             height: 1000px;
             font-size: 115%;
             text-align: justify;
@@ -144,7 +145,7 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 75px;
+    height: 60px;
     background-color: $foregroundColor;
 }
 .showMenu{

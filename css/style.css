@@ -88,7 +88,7 @@ header .nav-container .search:hover {
 }
 
 .container .left {
-  height: 1225px;
+  height: 1245px;
   position: relative;
   left: 0;
   float: left;
@@ -170,7 +170,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 75px;
+  height: 60px;
   background-color: #043e59;
 }
 
